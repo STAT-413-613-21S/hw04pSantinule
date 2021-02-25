@@ -17,4 +17,6 @@ Suggests:
     spelling
 Language: en-US
 Imports: 
-    utils
+    utils,
+    ggplot2,
+    dplyr

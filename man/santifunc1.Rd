@@ -18,6 +18,6 @@ returns the nth term from the recursive sequence
 Returns the nth term from the recursive sequence xn=xn−1+(xn−3−xn−2)/n.
 }
 \examples{
-santifunc1(x = c(2, 4, 3), n = 0)
+santifunc1(x = c(2, 4, 3), n = 2)
 santifunc1(x = c(2, 4, 3), n = 6)
 }

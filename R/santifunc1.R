@@ -1,5 +1,6 @@
 #' Returns the nth term from the recursive sequence xn=xn−1+(xn−3−xn−2)/n.
 #'
+#'
 #' @param x a vector of length 3
 #' @param n the number of terms for the recursive sequence
 #'
