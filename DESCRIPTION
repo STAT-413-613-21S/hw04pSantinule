@@ -14,9 +14,16 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
-    spelling
+    spelling,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
 Language: en-US
 Imports: 
     utils,
     ggplot2,
     dplyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/Santinule/hw04pSantinule
+BugReports: https://github.com/Santinule/hw04pSantinule/issues
