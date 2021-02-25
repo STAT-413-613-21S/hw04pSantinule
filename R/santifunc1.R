@@ -1,3 +1,13 @@
+#' Returns the nth term from the recursive sequence xn=xn−1+(xn−3−xn−2)/n.
+#'
+#' @param x a vector of length 3
+#' @param n the number of terms for the recursive sequence
+#'
+#' @return returns the nth term from the recursive sequence
+#' @export santifunc1
+#'
+#' @examples santifunc1(x = c(2, 4, 3), n = 2)
+#' santifunc1(x = c(2, 4, 3), n = 6)
 santifunc1 <- function(x,n){
   stopifnot(length(x)>=3, n>0)
   vec1 <- vector(mode = "double", length = n)
@@ -12,11 +22,7 @@ santifunc1 <- function(x,n){
       vec1[i] <- x[3]
     }
   }
-  return(tail(vec1, n=1))
+  return(utils::tail(vec1, n=1))
 }
 
-#Test
 
-santifunc1(x = c(2, 4, 3), n = 4)
-
-santifunc1(x = c(2, 4, 3), n = 6)
